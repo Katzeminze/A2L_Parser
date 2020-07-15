@@ -113,8 +113,8 @@ class FileA2L:
                     raise IndexError
 
             except IndexError:
-                break
                 print("Exception: Not enough elements were provided")
+                break
         return dictionary_measurement
 
 
@@ -126,3 +126,7 @@ def parser(measure_variable):
 
 # Get measurements of the specified value
 print(parser("B_YELLOW"))
+# >>>{'Variable name': 'B_YELLOW', 'FUNCTION_LIST': ['_DEMO_LED'],
+# 'IF_DATA': ['DIM', '0x5b', 'INTERN', 'BYTE'], 'Type': 'B_TRUE',
+# 'Value_1': (0, 0), 'Value_2': (0.0, 1.0), 'Data type': 'UBYTE',
+# 'Long identifier': "Yellow LED's. This is a logical on/off value", 'BIT_MASK': ['0x4']}
