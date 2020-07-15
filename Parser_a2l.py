@@ -61,9 +61,10 @@ class FileA2L:
         # Create common string of all elements of list
         lines_list = self.__search_string_in_file(string_to_search)
         data_string = ""
-        for i in lines_list:
-            data_string = data_string + " " + i
-
+        # for i in lines_list:
+            # data_string = data_string + " " + i
+        # Or alternatively
+        data_string = ' '.join(lines_list)
         # Check if the first string has more than 1 element
         data_string_name = data_string.partition('\"')[0].strip()
         if data_string_name != "":
